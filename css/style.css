@@ -60,14 +60,6 @@ body {
   position: relative;
 }
 
-@media (max-width: 600px) {
-  .header-line {
-    background-size: auto;
-    background-position: 0;
-    position: fixed;
-  }
-}
-
 .header {
   margin: 0 auto;
   background-color: #fff;
@@ -350,7 +342,7 @@ h5 {
 
 nav {
   display: block;
-  width: 950px;
+  width: 1010px;
   position: relative;
   z-index: 100;
   margin: 0 auto;
@@ -428,6 +420,7 @@ nav li {
   color: #333;
   line-height: 15px;
   padding: 25px 28px 23px;
+  width: 6rem;
 }
 
 .sf-menu li.sfHover a,
@@ -448,6 +441,9 @@ nav li {
 }
 
 @media screen and (max-width: 768px) {
+  .sf-menu{
+    list-style-type: none;
+  }
   .sf-menu > li a {
     background: url(../images/icons.png) no-repeat 0 0;
     float: none;
@@ -488,7 +484,7 @@ nav li {
 
 .ban {
   display: block;
-  width: 66.5%;
+  width: 71%;
   position: relative;
   z-index: 100;
   margin: 0 auto;
