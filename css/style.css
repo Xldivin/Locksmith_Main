@@ -77,21 +77,33 @@ body {
   left: -6rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1310px) {
   .header {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    gap: 1rem;
   }
   #callNow {
     left: -2rem;
   }
-  .location {
-    position: relative;
-    left: -2rem;
+  #location {
+    margin-left: 5rem;
   }
   .image2 {
     margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 439px) {
+  .address{
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .address{
+    margin-left: 0rem;
   }
 }
 
@@ -342,7 +354,7 @@ h5 {
 
 nav {
   display: block;
-  width: 1010px;
+  width: 71%;
   position: relative;
   z-index: 100;
   margin: 0 auto;
@@ -441,7 +453,7 @@ nav li {
 }
 
 @media screen and (max-width: 768px) {
-  .sf-menu{
+  .sf-menu {
     list-style-type: none;
   }
   .sf-menu > li a {
@@ -466,6 +478,14 @@ nav li {
     left: 10px;
     bottom: -13px;
     right: 10px;
+  }
+}
+
+@media screen and (min-width: 1640px) {
+  .sf-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -498,6 +518,14 @@ nav li {
 @media screen and (max-width: 768px) {
   .ban {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 1641px) {
+  .ban {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -745,9 +773,15 @@ p {
   margin: 0 0 10px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1224px) {
   .col-md-4 {
     width: 31.06%;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .col-md-4 {
+    width: 75.06%;
   }
 }
 
@@ -841,7 +875,7 @@ h6 {
   padding: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1224px) {
   #whyLocksmith-main {
     width: 85%;
     height: 460px;
@@ -858,6 +892,18 @@ h6 {
 }
 
 @media screen and (max-width: 425px) {
+  #whyLocksmith-main {
+    width: 60%;
+    height: 1060px;
+    margin: 0 auto;
+    padding: 3rem;
+  }
+  .whyLeftList {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 730px) {
   #whyLocksmith-main {
     width: 60%;
     height: 1060px;
@@ -1841,7 +1887,7 @@ label.message .empty {
   padding: 5px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1305px) {
   .banimage img {
     width: 100%;
   }
